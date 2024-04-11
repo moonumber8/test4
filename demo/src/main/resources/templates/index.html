@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>ชื่อพนักงาน</title>
+</head>
+<body>
+<h1>ชื่อพนักงาน</h1>
+<form>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item : ${itemList}">
+            <td><input type="text" th:value="${item}" name="name"/></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
